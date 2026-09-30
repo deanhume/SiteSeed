@@ -132,6 +132,19 @@ test('caches rendered HTML per production app', async () => {
   assert.equal(secondHtml, firstHtml);
 });
 
+test('all page types keep footer navigation and copyright without a wordmark', async () => {
+  for (const route of ['/', '/article-01/', '/about/', '/tag/guides/', '/author/alex/', '/preview/draft-example/', '/missing-page/']) {
+    const response = await fetch(`${baseUrl}${route}`);
+    assert.equal(response.status, route === '/missing-page/' ? 404 : 200, route);
+    const html = await response.text();
+    assert.match(html, /<footer class="site-footer">/);
+    assert.match(html, /<nav aria-label="Footer">/);
+    assert.match(html, /<a href="\/rss\/">RSS<\/a>/);
+    assert.match(html, /&copy; \d{4} Example Blog/);
+    assert.doesNotMatch(html, /footer-wordmark/);
+  }
+});
+
 test('serves published posts, pages and tags with the configured identity', async () => {
   assert.equal(site.posts.length, 18);
   assert.equal(site.pages.length, 2);

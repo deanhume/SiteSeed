@@ -217,7 +217,6 @@ function createTemplates(blog) {
       </nav>
       <span>&copy; ${currentYear} ${text(siteName)}</span>
     </div>
-    <a class="footer-wordmark" href="/" aria-label="${text(siteName)} home">${text(siteName)}</a>
   </footer>
   <script src="${publicAsset('search.js')}" defer></script>
   <script src="${publicAsset('navigation.js')}" defer></script>

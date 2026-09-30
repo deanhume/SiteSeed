@@ -518,8 +518,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-.footer-wordmark {
+h6 {
   font-family: "Jost", sans-serif;
 }
 
@@ -527,8 +526,7 @@ h1,
 h3,
 h4,
 h5,
-h6,
-.footer-wordmark {
+h6 {
   text-transform: uppercase;
 }
 
@@ -891,8 +889,7 @@ footer {
 .site-footer {
   border-top: 1px solid var(--border);
   margin-top: 5rem;
-  overflow: hidden;
-  padding: 2.5rem clamp(1.5rem, 5vw, 4.5rem) 0;
+  padding: 2.5rem clamp(1.5rem, 5vw, 4.5rem);
 }
 
 .footer-meta {
@@ -914,20 +911,6 @@ footer {
 
 .footer-meta a {
   color: var(--text);
-}
-
-.footer-wordmark {
-  color: var(--text);
-  display: block;
-  font-size: clamp(5rem, 17vw, 15rem);
-  font-weight: 800;
-  letter-spacing: -0.085em;
-  line-height: 0.8;
-  margin-top: 2.5rem;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  white-space: nowrap;
 }
 
 .prose pre {
@@ -1148,10 +1131,6 @@ footer {
     flex-direction: column;
   }
 
-  .footer-wordmark {
-    font-size: clamp(3rem, 14vw, 4.5rem);
-    letter-spacing: -0.07em;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

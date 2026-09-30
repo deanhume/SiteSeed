@@ -107,10 +107,7 @@ test('renders decoded metadata without a post standfirst', () => {
     /<button class="menu-button" type="button" aria-label="Menu" aria-controls="site-navigation" aria-expanded="false">/,
   );
   assert.doesNotMatch(html, /class="site-title"/);
-  assert.match(
-    html,
-    /<a class="footer-wordmark" href="\/" aria-label="Example Blog home">Example Blog<\/a>/,
-  );
+  assert.doesNotMatch(html, /footer-wordmark/);
   assert.match(
     html,
     /<nav aria-label="Footer">\s*<a href="\/author\/alex\/">Browse all articles<\/a>\s*<a href="\/about\/">About<\/a>\s*<a href="\/tag\/guides\/">Guides<\/a>\s*<a href="\/rss\/">RSS<\/a>\s*<\/nav>/,
