@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "tools": [
+        "actions_get",
+        "actions_list",
+        "get_commit",
+        "get_file_contents",
+        "get_job_logs",
+        "issue_read",
+        "list_branches",
+        "list_commits",
+        "list_issues",
+        "list_pull_requests",
+        "pull_request_read",
+        "search_code",
+        "search_issues",
+        "search_pull_requests"
+      ]
+    },
+    "playwright": {
+      "type": "local",
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"],
+      "tools": ["*"]
+    }
+  }
+}

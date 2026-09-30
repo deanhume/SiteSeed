@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Keep executable Node CLI shebangs portable on Unix hosts.
+bin/*.js text eol=lf

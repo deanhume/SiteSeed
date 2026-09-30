@@ -1,0 +1,20 @@
+{
+  "title": "Example Blog",
+  "description": "Notes on writing and learning.",
+  "url": "https://example.com",
+  "locale": "en-GB",
+  "timezone": "UTC",
+  "logo": "/example-logo.svg",
+  "image": "/example-logo.png",
+  "latestPostsTitle": "Latest articles",
+  "author": {
+    "name": "Alex Example",
+    "slug": "alex",
+    "bio": "An example author."
+  },
+  "navigation": [
+    { "label": "Home", "url": "/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "Guides", "url": "/tag/guides/" }
+  ]
+}

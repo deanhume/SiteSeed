@@ -1,0 +1,47 @@
+{
+  "name": "siteseed",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A small Markdown-powered blogging engine with separate blog content and configuration",
+  "type": "commonjs",
+  "main": "app.js",
+  "bin": {
+    "siteseed": "bin/siteseed.js"
+  },
+  "files": [
+    "app.js",
+    "bin/",
+    "src/",
+    "scripts/",
+    "public/styles.css",
+    "public/search.js",
+    "public/navigation.js",
+    "public/article.js",
+    "public/*.woff2",
+    "public/INTER-LICENSE.txt"
+  ],
+  "scripts": {
+    "setup": "node bin/siteseed.js setup",
+    "start": "node bin/siteseed.js start",
+    "dev": "node bin/siteseed.js dev",
+    "build": "node bin/siteseed.js build",
+    "build:images": "node bin/siteseed.js build:images",
+    "build:search": "node bin/siteseed.js build:search",
+    "check": "npm run check:content && npm test",
+    "check:content": "node bin/siteseed.js check",
+    "import:website": "node bin/siteseed.js import:website",
+    "import:ghost": "node bin/siteseed.js import:ghost",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@mixmark-io/domino": "^2.2.0",
+    "compression": "^1.8.1",
+    "express": "^5.1.0",
+    "sax": "^1.6.0",
+    "sharp": "^0.35.4",
+    "turndown": "^7.2.0"
+  }
+}

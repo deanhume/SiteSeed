@@ -1,0 +1,16 @@
+{
+  "title": "SiteSeed",
+  "description": "A simple Markdown-powered blog.",
+  "url": "http://localhost:3000",
+  "locale": "en-GB",
+  "timezone": "UTC",
+  "latestPostsTitle": "Latest articles",
+  "author": {
+    "name": "Your Name",
+    "slug": "author",
+    "bio": "Write a short introduction here."
+  },
+  "navigation": [
+    { "label": "Home", "url": "/" }
+  ]
+}
